@@ -24,6 +24,10 @@ config/name="tnuHkcuD"
 run/main_scene="res://BaseGame.tscn"
 config/icon="res://icon.png"
 
+[autoload]
+
+ScoreKeeper="*res://ScoreKeeper.tscn"
+
 [rendering]
 
 environment/default_environment="res://default_env.tres"
