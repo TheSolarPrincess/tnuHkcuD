@@ -37,6 +37,11 @@ func random_swerve():
 		swerve_speed = -swerve_speed
 	if self.position.x + swerve_speed >= get_viewport().size.x:
 		swerve_speed = - swerve_speed
+	if swerve_speed > 0:
+		$AnimatedSprite.flip_h = false
+	else:
+		$AnimatedSprite.flip_h = true
+		
 
 func take_damage():
 	var prefab = preload("res://DeadDuck.tscn")
